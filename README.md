@@ -2,7 +2,7 @@
 
 **Basic**
 ```js
-var promise = require('simple-promice');
+var promise = require('basic-promise');
 var p = promise(); // => Declare the promise
 
 p.then(function(a){ // => The promise is resolved
