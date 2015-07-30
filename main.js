@@ -49,11 +49,11 @@ var Promise = function(){
 	};
 	this.on = function(eventName, callback){
 		if(eventName === 'resolve')
-			events['resolve'].push(resolve);
+			events['resolve'].push(callback);
 		else if(eventName === 'reject')
-			events['reject'].push(reject);
+			events['reject'].push(callback);
 		else if(eventName === 'complete')
-			events['complete'].push(complete);
+			events['complete'].push(callback);
 		return this;
 	};
 };
