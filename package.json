@@ -1,0 +1,21 @@
+{
+  "name": "simple-promise",
+  "version": "0.0.1",
+  "description": "Module promise with a simple syntax",
+  "main": "main.js",
+  "author": {
+    "name": "Franciscofernando <hola@franciscofernando.com>"
+  },
+  "keywords": [],
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franciscofernando/simple-promise.git"
+  },
+  "license": "MIT",
+  "bin": {},
+  "readmeFilename": "README.md",
+  "dependencies": {}
+}
