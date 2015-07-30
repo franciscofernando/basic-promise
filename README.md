@@ -15,8 +15,8 @@ p.then(function(a){ // => The promise is resolved
 	console.log('COMPLETE');
 });
 
-p.resolve('a'); => Execute the function for resolve with the param "a"
-p.reject('a'); => Execute the function for reject with the param "a"
+p.resolve('a'); // => Execute the function for resolve with the param "a"
+p.reject('a'); // => Execute the function for reject with the param "a"
 ```
 
 **Multiple**
