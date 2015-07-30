@@ -15,6 +15,20 @@ p.then(function(a){ // => The promise is resolved
 	console.log('COMPLETE');
 });
 
+//or
+
+p.on('resolve', function(a){ // => The promise is resolved
+	console.log(a); // => Resolve param
+	console.log('DONE');
+})
+.on('reject', function(a){ // => The promise is rejected
+	console.log(a); // => Reject param
+	console.log('ERROR')
+})
+.on('complete', function(){ // => The promise id complete (after rolve or reject)
+	console.log('COMPLETE');
+});
+
 p.resolve('a'); // => Execute the function for resolve with the param "a"
 p.reject('a'); // => Execute the function for reject with the param "a"
 ```

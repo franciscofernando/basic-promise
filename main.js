@@ -46,6 +46,15 @@ var Promise = function(){
 			events['complete'].push(complete);
 		return this;
 	};
+	this.on = function(eventName, callback){
+		if(eventName === 'resolve')
+			events['resolve'].push(resolve);
+		else if(eventName === 'reject')
+			events['reject'].push(reject);
+		else if(eventName === 'complete')
+			events['complete'].push(complete);
+		return this;
+	};
 };
 var promise = function(promises){
 	if(typeof promises === 'number'){
