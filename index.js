@@ -1,3 +1,4 @@
+'use strict';
 var id = 1;
 var Promise = function(){
 	var events = {
@@ -104,4 +105,4 @@ var promise = function(promises){
 		return new Promise();
 	}
 };
-module.exports = promise;
+exports = promise;
