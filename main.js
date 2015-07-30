@@ -105,4 +105,4 @@ var promise = function(promises){
 		return new Promise();
 	}
 };
-exports = promise;
+exports = module.exports = promise;

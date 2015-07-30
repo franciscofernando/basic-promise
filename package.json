@@ -1,7 +1,8 @@
 {
   "name": "basic-promise",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Module promise with a simple syntax",
+  "main": "main.js",
   "author": {
     "name": "Franciscofernando <hola@franciscofernando.com>"
   },
