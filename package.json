@@ -1,6 +1,6 @@
 {
   "name": "basic-promise",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Module promise with a simple syntax",
   "main": "main.js",
   "author": {

@@ -1,4 +1,8 @@
-## Usage
+## Install
+Basic-promise is a module promise with a simple syntax
+```shell
+npm install basic-promise
+```
 
 **Basic**
 ```js
@@ -35,9 +39,9 @@ p.reject('a'); // => Execute the function for reject with the param "a"
 
 **Multiple**
 ```js
-var ps = [promise(), promise()];
+var ps = [promise(), promise()]; // => Array of promises
 // or
-var ps = [promise().then(function(){
+var ps = [promise().then(function(){ // => Array of promises with listener events
     console.log('resolve');
 },function(){
     console.log('reject');
@@ -52,7 +56,7 @@ promise().then(function(){
     console.log('complete');
 })];
 // or
-var ps = 2;
+var ps = 2; // => Number of promises
 
 var p = promise(ps);
 p.then(function(){
