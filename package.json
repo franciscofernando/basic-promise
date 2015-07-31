@@ -1,12 +1,12 @@
 {
   "name": "basic-promise",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Module promise with a simple syntax",
   "main": "main.js",
   "author": {
     "name": "Franciscofernando <hola@franciscofernando.com>"
   },
-  "keywords": [],
+  "keywords": ["promise", "resolve", "reject", "then"],
   "engines": {
     "node": "*"
   },
