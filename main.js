@@ -70,12 +70,7 @@ var promise = function(promises){
 			p.eq = function(index){
 				return promises[index];
 			};
-			p.last = function(){
-				return promises[promises.length-1];
-			};
-			p.first = function(){
-				return promises[0];
-			};
+			p.promises = promises;
 		var promisesResult = {};
 		var rejects = 0;
 		var resolves = 0;

@@ -11,7 +11,7 @@ p.then(function(a){ // => The promise is resolved
 }, function(a){ // => The promise is rejected
 	console.log(a); // => Reject param
 	console.log('ERROR')
-}, function(){ // => The promise id complete (after rolve or reject)
+}, function(){ // => The promise is complete (after resolve or reject)
 	console.log('COMPLETE');
 });
 
@@ -25,7 +25,7 @@ p.on('resolve', function(a){ // => The promise is resolved
 	console.log(a); // => Reject param
 	console.log('ERROR')
 })
-.on('complete', function(){ // => The promise id complete (after rolve or reject)
+.on('complete', function(){ // => The promise is complete (after resolve or reject)
 	console.log('COMPLETE');
 });
 
@@ -64,7 +64,13 @@ p.then(function(){
 });
 
 //Only with multiple promises
+p.promises; //Return an array of promises
 p.eq(2); //Returns the promise to fix the position 2 (the position is 0 to infinite)
-p.first(); //Return the first promise
-p.last(); //Return the last promise
+
+//trigger all
+p.promises.forEach(function(promise, position){
+	promise.resolve('This promise is: '+position);
+});
+//Here execute the resolve event in the multiple promise => console.log('All the promises is resolve');
+
 ```
