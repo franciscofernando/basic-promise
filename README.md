@@ -69,11 +69,11 @@ p.then(function(){
 
 //Only with multiple promises
 p.promises; //Return an array of promises
-p.eq(2); //Returns the promise to fix the position 2 (the position is 0 to infinite)
+p.eq(2); //Returns the promise to fix the position 2 (the position is 0 to p.promises.length)
 
 //trigger all
 p.promises.forEach(function(promise, position){
-	promise.resolve('This promise is: '+position);
+	promise.eq(position).resolve('This promise is: '+position);
 });
 //Here execute the resolve event in the multiple promise => console.log('All the promises is resolve');
 
