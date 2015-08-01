@@ -4,7 +4,7 @@ Basic-promise is a module promise with a simple syntax
 npm install basic-promise
 ```
 
-**Basic**
+## Basic
 ```js
 var promise = require('basic-promise');
 var p = promise(); // => Declare the promise
@@ -37,7 +37,7 @@ p.resolve('a'); // => Execute the function for resolve with the param "a"
 p.reject('a'); // => Execute the function for reject with the param "a"
 ```
 
-**Multiple**
+## Multiple
 ```js
 var ps = [promise(), promise()]; // => Array of promises
 // or
